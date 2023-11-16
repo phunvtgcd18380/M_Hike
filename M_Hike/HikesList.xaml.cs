@@ -23,5 +23,4 @@ public partial class HikesList : ContentPage
         _db.DeleteData(hike);
         Navigation.PushAsync(new HikesList(), true);
     }
-
 }
