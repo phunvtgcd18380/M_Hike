@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_Hike.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="30,0"
+            VerticalOptions="Start"
+            HorizontalOptions="FillAndExpand">
+            <Frame Padding="5" CornerRadius="4">
+                <Label Text="M_Hike" HorizontalTextAlignment="Center"
+                       FontSize="Title"/>
+            </Frame>
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Hike Name" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <Entry x:Name="txtHikeName" HorizontalOptions="StartAndExpand"
+                               Placeholder="Enter Hike Name" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Location" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <Entry x:Name="txtLocation" HorizontalOptions="StartAndExpand"
+                               Placeholder="Enter Hike Name" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Date" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <DatePicker x:Name="dtpDate" Format="dd/MM/yyyy"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Parking Available" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <CheckBox x:Name="cbParking" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="length" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <Entry x:Name="txtLength" HorizontalOptions="StartAndExpand"
+                               Placeholder="Enter Hike Name" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Level" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <Entry x:Name="txtLevel" HorizontalOptions="StartAndExpand"
+                               Placeholder="Enter Hike Name" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Description" VerticalOptions="Center" Margin="0,0,30,0"
+                               HorizontalOptions="Start"/>
+                <Entry x:Name="txtDescription" HorizontalOptions="StartAndExpand"
+                               Placeholder="Enter Hike Name" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand"  >
+                <Button
+                x:Name="BackBtn"
+                Text="Back"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="BackClicked"
+                HorizontalOptions="End"
+                Margin="40,60,30,0"   
+                Padding="20"
+                FontSize="30"
+                    />
+            <Button
+                x:Name="SaveBtn"
+                Text="Save"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnSaveClicked"
+                Margin="30,60,30,0"   
+                Padding="20"
+                FontSize="30"/>
+            </HorizontalStackLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
