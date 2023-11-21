@@ -64,7 +64,6 @@
                 <Button
                 x:Name="BackBtn"
                 Text="Back"
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="BackClicked"
                 HorizontalOptions="End"
                 Margin="40,60,30,0"   
@@ -74,7 +73,6 @@
             <Button
                 x:Name="SaveBtn"
                 Text="Save"
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnSaveClicked"
                 Margin="30,60,30,0"   
                 Padding="20"
